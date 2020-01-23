@@ -1,6 +1,5 @@
 # CC SVG
-Internal SVG Talk 2020-01-22
 
-Presentation in the gh-pages branch
+Quick 'n dirty talk 2020-01-23
 
 view presentation at https://elliz.github.io/ccsvg/
