@@ -405,6 +405,37 @@
 						<textarea data-template>
 								```html
 								<svg ...>
+									<ellipse 👈
+									    cx="100" cy="100" 
+										rx="80" 👈 
+										ry="50" 👈
+										fill="tomato"
+										stroke="white" stroke-width="10" />
+								</svg>
+								```
+							</textarea>
+					</div>
+					<div class="fragment">
+						<svg xmlns='http://www.w3.org/2000/svg'  width="200" height="200"
+								    viewBox="0 0 200 200">
+									
+									<ellipse 
+									stroke="white" stroke-width="10"
+									cx="100" cy="100" 
+									rx="80" 
+									ry="50" 
+									fill="tomato"/>
+								</svg>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="columns">
+					<div data-markdown>
+						<textarea data-template>
+								```html
+								<svg ...>
 									<rect 
 										x1="10" y1="10" 
 										width="180"
@@ -497,9 +528,14 @@
 						</textarea>
 				</div>
 
+<p class="fragment"><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths">MDN Paths Tutorial</a></p>
+
 				<p class="fragment">
 					<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 15 100 90' width="300">
-						<path d='M100 24.4C55.42 50.22 59.33 112.1 0 56.6v9.17c17.94 14.7 36.24 18.38 48.78 11.56 12.55-6.83 31.9-32.38 51.22-41.8z'/>
+						<defs>
+							<linearGradient id='aaaa'><stop offset='0' stop-color='#D3DD86'/><stop offset='1' stop-color='#B5C830'/></linearGradient>
+						</defs>
+						<path fill="url(#aaaa)" d='M100 24.4C55.42 50.22 59.33 112.1 0 56.6v9.17c17.94 14.7 36.24 18.38 48.78 11.56 12.55-6.83 31.9-32.38 51.22-41.8z'/>
 					</svg>
 				</p>
 
@@ -689,7 +725,12 @@
 			</section>
 
 
-
+			<section>
+				<h2>URL Encoding</h2>
+				<p>
+					<a href="https://codepen.io/elliz/pen/ygvgay">This pen</a>
+				</p>
+			</section>
 			
 
 			<section data-background-color="rgb(136, 36, 31)">
